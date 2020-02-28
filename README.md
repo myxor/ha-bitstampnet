@@ -5,7 +5,7 @@ Home-Assistant sensor for fetching crypto currency data from [bitstamp.net](http
 ## Get it running 🍕
 
 1. checkout this repository
-2. copy the `bitstampnet` folder into the `config/custom_components` folder in your home-assistant instance 
+2. copy the content of the  `custom_components/bitstampnet` folder into `config/custom_components/bitstampnet` folder in your home-assistant instance (you may have to create that folder)
 3. configure the desired sensors in your `configuration.yaml` file
 
 ### Example configuration entries:
