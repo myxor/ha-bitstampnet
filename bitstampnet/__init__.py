@@ -1,0 +1,1 @@
+"""The bitstamp.net component."""
