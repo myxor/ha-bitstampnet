@@ -2,17 +2,25 @@
 
 Home-Assistant sensor for fetching crypto currency data from [bitstamp.net](https://bitstamp.net).
 
-## Get it running 🍕
+## Get it installed 🍕
+
+1. Install Python dependency `BitstampClient` (if not already installed). 
+You can do this by running `pip install BitstampClient==2.2.8` or `docker exec homeassistant pip install BitstampClient==2.2.8` depending wether you are running home-assistant in docker or not.
 
 ### Method 1: Using HACS
 
-If you are using the [HACS (Home Assistant Community Store)](https://hacs.xyz/) you can just add the link to this github repo as a new custom repository in the settings menu and install bitstamp.net via the store UI.
+If you are using the [HACS (Home Assistant Community Store)](https://hacs.xyz/):
+
+1. Add the link to this github repo as a new custom repository in the settings menu 
+2. Install bitstamp.net integration via the store UI
 
 ### Method 2: Manually
 
 1. checkout this repository
 2. copy the content of the  `custom_components/bitstampnet` folder into `config/custom_components/bitstampnet` folder in your home-assistant instance (you may have to create that folder)
 3. configure the desired sensors in your `configuration.yaml` file
+
+## Get it running inside home-assistant
 
 ### Example configuration entries:
 
@@ -38,7 +46,7 @@ sensor:
     currency: "xrp"
 ```
 
-## configuration
+### Configuration options
 
 * `name`: Some custom name
 * `currency`: The crypto currency you want to see the exchange rate from
@@ -46,7 +54,7 @@ sensor:
 * `display_currency_decimals`: The number of decimals the rate should be rounded to. Default: 2
 * `icon`: Pick an icon from [materialdesignicons.com](https://materialdesignicons.com/). Default: `mdi:currency-btc`
 
-## Supported crypto currencies:
+### Supported crypto currencies:
 
 * btc (Bitcoin)
 * eth (Ether)
