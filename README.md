@@ -66,3 +66,7 @@ sensor:
 
 * eur
 * usd
+
+# Screenshot
+
+![Sensor](https://raw.githubusercontent.com/myxor/ha-bitstampnet/master/screenshots/sensor.png)
