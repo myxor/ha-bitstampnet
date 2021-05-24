@@ -1,7 +1,7 @@
 {
   "domain": "bitstampnet",
   "name": "bitstamp.net",
-  "version": "1.0.1"
+  "version": "1.0.1",
   "documentation": "https://github.com/myxor/ha-bitstampnet/blob/master/README.md",
   "requirements": ["BitstampClient==2.2.8"],
   "dependencies": [],
